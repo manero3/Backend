@@ -3,6 +3,7 @@ using ManeroBackend.Models;
 using ManeroBackend.Repositories;
 using Microsoft.AspNetCore.Http;
 using System.Diagnostics;
+using ManeroBackend.Enums;
 
 namespace ManeroBackend.Services;
 

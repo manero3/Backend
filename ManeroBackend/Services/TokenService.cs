@@ -8,10 +8,10 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
-using System;
 using ManeroBackend.Authentication;
 using ManeroBackend.Contexts;
 using ManeroBackend.Controllers;
+using Azure;
 
 namespace ManeroBackend.Services
 {
