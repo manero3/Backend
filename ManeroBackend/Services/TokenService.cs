@@ -9,6 +9,9 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using System;
+using ManeroBackend.Authentication;
+using ManeroBackend.Contexts;
+using ManeroBackend.Controllers;
 
 namespace ManeroBackend.Services
 {

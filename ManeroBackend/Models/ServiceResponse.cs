@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using ManeroBackend.Enums;
+using Microsoft.AspNetCore.Http;
 
 namespace ManeroBackend.Models
 {

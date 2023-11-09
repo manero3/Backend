@@ -1,4 +1,6 @@
-﻿using ManeroBackend.Models;
+﻿using ManeroBackend.Contexts;
+using ManeroBackend.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace ManeroBackend.Repositories;
 

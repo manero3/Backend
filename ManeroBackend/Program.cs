@@ -1,3 +1,5 @@
+using ManeroBackend.Authentication;
+using ManeroBackend.Authorization;
 using ManeroBackend.Contexts;
 using ManeroBackend.Repositories;
 using ManeroBackend.Services;
