@@ -1,4 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ManeroBackend.Models;
+using ManeroBackend.Models.Entities;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace ManeroBackend.Contexts
 {

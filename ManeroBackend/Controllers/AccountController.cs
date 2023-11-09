@@ -6,7 +6,7 @@ using System.Diagnostics;
 using System.Security.Claims;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http;
-using Google.Apis.Auth.OAuth2;
+//using Google.Apis.Auth.OAuth2;
 
 namespace ManeroBackend.Controllers
 {
@@ -73,3 +73,4 @@ namespace ManeroBackend.Controllers
             });
         }
     }
+}
