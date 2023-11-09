@@ -1,4 +1,5 @@
-﻿using Microsoft.IdentityModel.Tokens;
+﻿using ManeroBackend.Controllers;
+using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
 namespace ManeroBackend.Services;
