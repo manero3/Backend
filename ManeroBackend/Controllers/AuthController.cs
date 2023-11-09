@@ -1,9 +1,16 @@
-﻿using ManeroBackend.Authentication;
-using ManeroBackend.Models.DTOs;
-using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
-using ManeroBackend.Services;
+﻿using System.Diagnostics;
 using System;
+using System.Net.Http.Headers;
+using Azure.Core;
+using ManeroBackend.Models.DTOs;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using ManeroBackend.Services;
+using ManeroBackend.Authentication;
 
 namespace ManeroBackend.Controllers
 {
