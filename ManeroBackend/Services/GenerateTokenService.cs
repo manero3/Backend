@@ -2,11 +2,11 @@
 using ManeroBackend.Contexts;
 using ManeroBackend.Enums;
 using ManeroBackend.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Text;
 
 namespace ManeroBackend.Services;
 
