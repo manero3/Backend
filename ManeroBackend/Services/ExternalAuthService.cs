@@ -3,6 +3,8 @@ using ManeroBackend.Models;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using System.IdentityModel.Tokens.Jwt;
+using ManeroBackend.Contexts;
+using ManeroBackend.Enums;
 
 namespace ManeroBackend.Services;
 

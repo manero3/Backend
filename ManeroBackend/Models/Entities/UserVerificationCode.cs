@@ -1,4 +1,6 @@
-﻿namespace ManeroBackend.Models.Entities;
+﻿using ManeroBackend.Contexts;
+
+namespace ManeroBackend.Models.Entities;
 
 public enum VerificationType
 {
