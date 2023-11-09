@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManeroBackend", "ManeroBackend\ManeroBackend.csproj", "{B988C03C-DFD2-44A5-BC02-63BADCC2526C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManeroBackend", "ManeroBackend\ManeroBackend.csproj", "{B988C03C-DFD2-44A5-BC02-63BADCC2526C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManeroBackend.Tests", "ManeroBackend.Tests\ManeroBackend.Tests.csproj", "{2F0D1971-0E3C-42AB-889A-A99748AADC4B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B988C03C-DFD2-44A5-BC02-63BADCC2526C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B988C03C-DFD2-44A5-BC02-63BADCC2526C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B988C03C-DFD2-44A5-BC02-63BADCC2526C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F0D1971-0E3C-42AB-889A-A99748AADC4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F0D1971-0E3C-42AB-889A-A99748AADC4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F0D1971-0E3C-42AB-889A-A99748AADC4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F0D1971-0E3C-42AB-889A-A99748AADC4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
