@@ -1,5 +1,5 @@
-﻿using ManeroBackendAPI.Models;
-using ManeroBackendAPI.Models.Entities;
+﻿using ManeroBackend.Models;
+using ManeroBackend.Models.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
