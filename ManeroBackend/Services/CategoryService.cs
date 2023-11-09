@@ -12,6 +12,7 @@ public interface ICategoryService
     Task<ServiceResponse<List<Product>>> GetProductsByCategoryAsync(int categoryId);
 
     Task<ServiceResponse<Category>> SearchCategoryAsync(string term);
+    Task<ServiceResponse<List<Category>>> GetAllAsync();
 }
 public class CategoryService : ICategoryService
 {
@@ -75,6 +76,31 @@ public class CategoryService : ICategoryService
                 response.StatusCode = StatusCode.NotFound;
             }
         }
+        catch (Exception ex)
+        {
+            Debug.WriteLine(ex.Message);
+            response.StatusCode = StatusCode.InternalServerError;
+            response.Content = null;
+        }
+
+        return response;
+    }
+
+    public async Task<ServiceResponse<List<Category>>> GetAllAsync()
+    {
+        var response = new ServiceResponse<List<Category>>
+        {
+            StatusCode = StatusCode.Ok,
+            Content = new List<Category>()
+        };
+
+        try
+        {
+            var result = await _categoryRepository.ReadAllAsync();
+            foreach (var entity in result)
+                response.Content.Add(entity);
+        }
+
         catch (Exception ex)
         {
             Debug.WriteLine(ex.Message);

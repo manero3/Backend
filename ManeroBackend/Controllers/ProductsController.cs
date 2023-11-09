@@ -183,5 +183,20 @@ namespace ManeroBackend.Controllers
             }
         }
 
+        [HttpGet("categories")]
+        public async Task<IActionResult> GetAllCategories()
+        {
+            try
+            {
+                var response = await _categoryService.GetAllAsync();
+                return StatusCode((int)response.StatusCode, response);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                return Problem();
+            }
+        }
+
     }
 }
