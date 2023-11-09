@@ -1,5 +1,6 @@
 ﻿
 using Google.Apis.Auth;
+
 namespace ManeroBackend.Authentication
 {
     public class GoogleUser
