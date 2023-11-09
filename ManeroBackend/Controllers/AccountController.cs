@@ -1,12 +1,11 @@
-﻿using Azure.Core;
+﻿using System.Diagnostics;
+using System.Security.Claims;
+using Google.Apis.Auth.OAuth2;
 using ManeroBackend.Contexts;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
-using System.Security.Claims;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http;
-//using Google.Apis.Auth.OAuth2;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace ManeroBackend.Controllers
 {

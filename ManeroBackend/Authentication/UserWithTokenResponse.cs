@@ -1,4 +1,5 @@
 ﻿using ManeroBackend.Contexts;
+using ManeroBackend.Models.Entities;
 
 namespace ManeroBackend.Authentication
 {
