@@ -1,8 +1,4 @@
-﻿using ManeroBackend.Models.DTOs;
-using ManeroBackend.Models;
-using Microsoft.AspNetCore.Mvc;
-using static ManeroBackend.Services.ExternalAuthService;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Security;
 using Google.Apis.Auth;
 using System.Net.Http;
@@ -10,6 +6,13 @@ using Newtonsoft.Json;
 using Microsoft.AspNetCore.Mvc;
 using Azure.Core;
 using System.Net.Http.Headers;
+using ManeroBackend.Models.DTOs;
+using ManeroBackend.Enums;
+using ManeroBackend.Models;
+using Microsoft.AspNetCore.Mvc;
+using static ManeroBackend.Services.ExternalAuthService;
+using System.Net.Http.Headers;
+using System;
 
 namespace ManeroBackend.Services;
 

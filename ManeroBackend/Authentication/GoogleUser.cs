@@ -1,4 +1,6 @@
-﻿namespace ManeroBackend.Authentication
+﻿
+using Google.Apis.Auth;
+namespace ManeroBackend.Authentication
 {
     public class GoogleUser
     {
