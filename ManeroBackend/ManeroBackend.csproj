@@ -32,7 +32,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
     <Folder Include="Authentication\" />
     <Folder Include="Authorization\" />
     <Folder Include="Enums\" />
