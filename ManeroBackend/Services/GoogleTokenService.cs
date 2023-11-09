@@ -9,11 +9,7 @@ using System.Net.Http.Headers;
 using ManeroBackend.Models.DTOs;
 using ManeroBackend.Enums;
 using ManeroBackend.Models;
-using Microsoft.AspNetCore.Mvc;
-using static ManeroBackend.Services.ExternalAuthService;
-using System.Net.Http.Headers;
-using System;
-
+using ManeroBackend.Authentication;
 namespace ManeroBackend.Services;
 
 public interface IGoogleTokenService
