@@ -1,4 +1,6 @@
-﻿namespace ManeroBackend.Models
+﻿using ManeroBackend.Contexts;
+
+namespace ManeroBackend.Models
 {
     public class RefreshToken
     {
