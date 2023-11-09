@@ -1,5 +1,6 @@
 ﻿using ManeroBackend.Contexts;
 using ManeroBackend.Models;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 
 namespace ManeroBackend.Repositories;
