@@ -4,6 +4,9 @@ using ManeroBackend.Repositories;
 using Microsoft.AspNetCore.Identity;
 using System.Diagnostics;
 using System;
+using ManeroBackend.Authentication;
+using ManeroBackend.Contexts;
+using ManeroBackend.Authorization;
 
 namespace ManeroBackend.Services;
 
