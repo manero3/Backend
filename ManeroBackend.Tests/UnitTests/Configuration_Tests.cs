@@ -27,7 +27,7 @@ public class Configuration_Tests
     {
         // Arrange
         var configuration = new ConfigurationBuilder()
-            .AddJsonFile("appsettings.json") // Adjust the path to your JSON file
+            .AddJsonFile("appsettings.json") 
             .Build();
 
         // Act
