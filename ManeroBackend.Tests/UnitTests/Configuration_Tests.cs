@@ -21,4 +21,23 @@ public class Configuration_Tests
         Assert.NotNull(clientId);
         Assert.NotNull(clientSecret);
     }
+
+    [Fact]
+    public void CanReadJwtSettings()
+    {
+        // Arrange
+        var configuration = new ConfigurationBuilder()
+            .AddJsonFile("appsettings.json") // Adjust the path to your JSON file
+            .Build();
+
+        // Act
+        var issuer = configuration["Jwt:Issuer"];
+        var audience = configuration["Jwt:Audience"];
+        var key = configuration["Jwt:Key"];
+
+        // Assert
+        Assert.NotNull(issuer);
+        Assert.NotNull(audience);
+        Assert.NotNull(key);
+    }
 }
