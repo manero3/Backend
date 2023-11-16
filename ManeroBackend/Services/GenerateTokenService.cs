@@ -23,10 +23,9 @@ public class GenerateTokenService
     {
         var secret = _jwtSettings.Value.Key;
         // If your secret is base64 encoded in the configuration, decode it
-        var key = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secret)) { KeyId = "Your Key Id" };
-        var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret));
-
+        var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("D3fP67Zn2v9w4x!Bb5tGhQmR8jLk6YnR"));
         var signinCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
+
 
         var claims = new List<Claim>
     {
@@ -35,8 +34,8 @@ public class GenerateTokenService
     };
 
         var tokenOptions = new JwtSecurityToken(
-                       issuer: "https://localhost:7286",
-                       audience: "https://localhost:7286",
+                       issuer: "https://localhost:7277",
+                       audience: "https://localhost:7277",
                        claims: claims,
                        expires: DateTime.Now.AddMinutes(5),
                        signingCredentials: signinCredentials
