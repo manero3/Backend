@@ -18,12 +18,12 @@ public class GenerateTokenService
     {
         _jwtSettings = jwtSettings;
     }
-
     public string GenerateJWTForUser(string userId)
     {
         var secret = _jwtSettings.Value.Key;
         // If your secret is base64 encoded in the configuration, decode it
-        var secretKey = new SymmetricSecurityKey(Convert.FromBase64String(secret));
+        var key = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secret)) { KeyId = "Your Key Id" };
+        var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret));
 
         var signinCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
 
@@ -50,10 +50,13 @@ public class GenerateTokenService
         var token = GenerateJWTForUser(newUser.Id.ToString());
         return Task.FromResult(new ServiceResponse<string>
         {
-            StatusCode = StatusCode.Ok,
+            StatusCode = Enums.StatusCode.Ok,
             Content = token
         });
     }
+
+
+   
 
 }
 
