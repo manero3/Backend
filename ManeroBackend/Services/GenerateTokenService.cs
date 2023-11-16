@@ -4,6 +4,7 @@ using ManeroBackend.Enums;
 using ManeroBackend.Models;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -29,7 +30,8 @@ public class GenerateTokenService
 
         var claims = new List<Claim>
     {
-        new Claim(ClaimTypes.NameIdentifier, userId)
+        new Claim(ClaimTypes.NameIdentifier, userId),
+          new Claim("additionalAudiences", JsonConvert.SerializeObject(new List<string> { "https://localhost:7076" })),
     };
 
         var tokenOptions = new JwtSecurityToken(
